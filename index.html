@@ -1,8 +1,10 @@
-<!DOCTYPE html><html class="light stitch-anim-fade-in" lang="en" style=""><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+<!DOCTYPE html>
+
+<html class="light stitch-anim-fade-in" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
         try {
@@ -127,12 +129,12 @@
 </head>
 <body class="antialiased min-h-screen flex flex-col font-body-md text-body-md overflow-x-hidden bg-[#fdf8f8] h-auto">
 <!-- MOUSE TRACKING BLOB (SQUIRCLE) -->
-<div id="cursor-blob" style="position: fixed; transform: translate3d(1258px, 3275px, 0px);"></div>
+<div class="" id="cursor-blob" style='position: fixed; width: 120vw; height: 120vh; background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAj1oTEqSASm7lyWM_VTh7rSnChgjArMXtOri4oY3sPkGT7NpwU9wKv3WjTL7s6Z3RQnhGnnLaWfpml3wt1i9QaX74-BqDP4rgj_6U2MWnFGX8Z9StJ_abApnvNaGP2rjAHWsdWg3MB8u9WTT4mb_nUm7BIBTX_MLtUsKbIYQ4AVUGoGSw6p6RWaP4sK0l4p5B7wzGfZAhbqGRwLOssdzC12wmmAXU8TquFsuiwavfvzB8X9OX9PnfZCgRqvjQRoy3XGgY"); background-size: cover; background-position: center center; filter: blur(120px); opacity: 0.45; border-radius: 40%; pointer-events: none; z-index: 0; left: -60vw; top: -60vh; will-change: transform; transition: transform 0.15s cubic-bezier(0.23, 1, 0.32, 1);'></div>
 <!-- TOP NAVIGATION -->
-<nav class="fixed top-0 w-full z-50 border-b border-zinc-200/60 dark:border-zinc-800/60 bg-[#F7F7F5]/80 backdrop-blur-md dark:bg-zinc-950/80 transition-all">
-<div class="max-w-[1280px] mx-auto px-8 flex justify-between items-center h-[72px]">
+<nav class="fixed top-0 w-full z-50 border-b border-zinc-200/60 dark:border-zinc-800/60 bg-[#F7F7F5]/80 dark:bg-zinc-950/80 transition-all backdrop-blur-md">
+<div class="max-w-[1280px] mx-auto px-8 flex justify-between items-center h-[72px] px-4">
 <div class="flex items-center gap-12">
-<a class="text-lg font-bold tracking-tighter text-zinc-900 dark:text-zinc-50 font-h3 text-[20px]" href="#"><img alt="ASC Logo" class="w-auto object-contain h-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxb5pxNSiIgGV0sJtawxfdmoK2XrJLgBPlS_HJb-D0bF80hkIuznvyh68Xyqijnh20U-G_rA4f9fWRPPd8fLZMchHSbQgf_C_CvxRJSnSOb-dzfAATF164HI8WwdZKQDBYTsfU2LE0c-Mjbx7NSgDVDz-0me6jf23lontoCbtwZuHQNjs3IZOhsxZzQIzQRstcoGQItN30x-1MqAY4xAgpU1am5yDW0UvnDK_1ufZRATzkqSl8vnFKXkQ9xe_5qMapFzF4ggJrwEps"></a>
+<a class="text-lg font-bold tracking-tighter text-zinc-900 dark:text-zinc-50 font-h3 text-[20px]" href="#"><img alt="ASC Logo" class="w-auto object-contain h-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxb5pxNSiIgGV0sJtawxfdmoK2XrJLgBPlS_HJb-D0bF80hkIuznvyh68Xyqijnh20U-G_rA4f9fWRPPd8fLZMchHSbQgf_C_CvxRJSnSOb-dzfAATF164HI8WwdZKQDBYTsfU2LE0c-Mjbx7NSgDVDz-0me6jf23lontoCbtwZuHQNjs3IZOhsxZzQIzQRstcoGQItN30x-1MqAY4xAgpU1am5yDW0UvnDK_1ufZRATzkqSl8vnFKXkQ9xe_5qMapFzF4ggJrwEps"/></a>
 <div class="hidden md:flex items-center gap-6">
 </div>
 </div>
@@ -141,18 +143,18 @@
 </div>
 </nav>
 <!-- MAIN CONTENT CANVAS -->
-<main class="flex-grow pt-[140px] pb-[180px] relative z-10">
+<main class="flex-grow pt-[140px] pb-[180px] relative z-10 px-4">
 <!-- HERO SECTION -->
-<section class="max-w-[1280px] mx-auto px-8 mb-[140px]" id="hero">
+<section class="max-w-[1280px] mx-auto mb-[140px]" id="hero">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-<div class="lg:col-span-7 flex flex-col gap-8">
-<h1 class="font-h1 text-h1 text-primary">Safe, Reliable and Trusted</h1>
-<div class="flex flex-wrap items-center gap-4 mt-4">
+<div class="lg:col-span-7 flex flex-col gap-8 text-center">
+<h1 class="font-h1 text-h1 text-primary text-[48px]">Safe, Reliable and Trusted</h1>
+<div class="flex flex-wrap items-center gap-4 mt-4 justify-center">
 <a class="bg-transparent border border-outline text-primary px-6 py-3 rounded-full font-medium transition-all hover:bg-surface-variant" href="#contact-section">Contact sales</a>
-<div class="flex items-center gap-3 ml-4"><span class="text-xs font-label-caps text-secondary-auralis uppercase tracking-widest opacity-70">CO-POWERED BY</span><div class="w-48"><img alt="Honeywell Logo" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2VygtHIU5ICrGPglzYsstn6IUAcalX4Y2dPg_6XevWPoTiLeS4ydz5szn2U5myWIcz96MelYKLjcHZfgFndQTtftJq0QXuNI_c0a11Tmj762AOJdupETpQ84Bjp1UwliD_h9qPKejAcL_lZ1OOHMbFQDQeMFBxF4Sm9elIyn-tdeyQpoa9jgILX-tjgFQdqsiEdCf4koyF_W4vCvr2NjL1hXbeSqxqAvGOENiktBgGlftgbyfgfiIrzz0dADmQnfjZ0JFW-dzqm4a"></div></div></div>
+<div class="flex items-center gap-3 ml-4"><span class="text-xs font-label-caps text-secondary-auralis uppercase tracking-widest opacity-70">CO-POWERED BY</span><div class="w-48"><img alt="Honeywell Logo" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2VygtHIU5ICrGPglzYsstn6IUAcalX4Y2dPg_6XevWPoTiLeS4ydz5szn2U5myWIcz96MelYKLjcHZfgFndQTtftJq0QXuNI_c0a11Tmj762AOJdupETpQ84Bjp1UwliD_h9qPKejAcL_lZ1OOHMbFQDQeMFBxF4Sm9elIyn-tdeyQpoa9jgILX-tjgFQdqsiEdCf4koyF_W4vCvr2NjL1hXbeSqxqAvGOENiktBgGlftgbyfgfiIrzz0dADmQnfjZ0JFW-dzqm4a"/></div></div></div>
 </div>
 <div class="lg:col-span-4 lg:col-start-9 flex justify-end">
-<p class="font-body-lg text-body-lg text-secondary-auralis max-w-sm text-right lg:text-left pt-4">At Al Assas Specialized Company (ASC), we deliver top-tier electrical and precision engineering services, along with high-end industrial electrical products and advanced fire alarm systems. We are committed to providing premium quality and exceptional execution for every project.</p>
+<p class="font-body-lg text-body-lg text-secondary-auralis max-w-sm lg:text-left pt-4 text-center">At Al Assas Specialized Company (ASC), we deliver top-tier electrical and precision engineering services, along with high-end industrial electrical products and advanced fire alarm systems. We are committed to providing premium quality and exceptional execution for every project.</p>
 </div>
 </div>
 </section>
@@ -193,23 +195,23 @@
 </div>
 </section>
 <!-- ENTERPRISE SECURITY MODULE (MOVED TO MIDDLE) -->
-<section class="max-w-[1280px] mx-auto px-8 mb-[180px]" id="contact">
+<section class="max-w-[1280px] mx-auto mb-[180px]" id="contact">
 <div class="flex items-center gap-4 mb-8">
 <span class="font-label-caps text-label-caps bg-surface-variant text-primary px-3 py-1 rounded-full">Global Infrastructure</span>
 <div class="h-px bg-auralis flex-grow opacity-50"></div>
 </div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-12 text-center">
 <div class="lg:col-span-6">
 <h2 class="font-h2 text-[48px] text-primary leading-tight">Enterprise-grade security and scale</h2>
 </div>
-<div class="lg:col-span-5 lg:col-start-8 flex items-end">
+<div class="lg:col-span-5 lg:col-start-8 flex items-end justify-center">
 <p class="font-body-lg text-body-lg text-secondary-auralis">ASC provides the backbone for national-scale fire safety monitoring, combining high-fidelity data with rapid response capabilities.</p>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div class="bg-card-auralis rounded-3xl border border-auralis flex flex-col relative overflow-hidden group hover:shadow-sm transition-shadow backdrop-blur-sm bg-surface-container-lowest/30">
 <div class="aspect-[16/9] overflow-hidden">
-<img alt="Saudi Arabian engineers monitoring fire safety data" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQPN-z49BwFj8XGQ6HizeiYAo3HI91Ng1NVjfZX8WwP7TJ0Fe7ewkRXfBCbQeMifzlDXGGS8NO5znYgiCZN5qZAwVbXLFVDxOB_Vqju3K2NWHnbaMLLcBw-c937WtDFwdkxluSCH1i5cwjNbOxwvqCiZ7t_6QGSYakb2-7NIf48G2EOxfb2C-PazUnnWi9psYFsYvIQoHogA26jDFutDzQIuj3C5nRxIPSb87vZmUMGysm80PP4nLTB305rR14mgGT1iLkoPGGd2pQ">
+<img alt="Saudi Arabian engineers monitoring fire safety data" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQPN-z49BwFj8XGQ6HizeiYAo3HI91Ng1NVjfZX8WwP7TJ0Fe7ewkRXfBCbQeMifzlDXGGS8NO5znYgiCZN5qZAwVbXLFVDxOB_Vqju3K2NWHnbaMLLcBw-c937WtDFwdkxluSCH1i5cwjNbOxwvqCiZ7t_6QGSYakb2-7NIf48G2EOxfb2C-PazUnnWi9psYFsYvIQoHogA26jDFutDzQIuj3C5nRxIPSb87vZmUMGysm80PP4nLTB305rR14mgGT1iLkoPGGd2pQ"/>
 </div>
 <div class="p-8 flex flex-col gap-4">
 <h3 class="font-h3 text-[24px] text-primary">Global Monitoring at Scale</h3>
@@ -217,32 +219,31 @@
 </div>
 </div>
 <div class="bg-card-auralis rounded-3xl border border-auralis flex flex-col relative overflow-hidden group hover:shadow-sm transition-shadow backdrop-blur-sm bg-surface-container-lowest/30">
-<div class="aspect-[16/9] overflow-hidden"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb2tnZ0GoKww4ZwD__g2NfQEXWwDsEuS1w6XiE4K7HdQfIr683_yF_jyg8a-8jVlZjqOApx-9GuFnS9fjs5tFCk7jZD6U2qLbER4PSQgb4OkSvSg8_9hEBotrVJziO0eGMtvxf63gQzbOCHS4E_y-Z8Z_96j81WojeJ0NPgzKQi0Ii2mbRlz02TCjY64KOm6U3c0dJccq3UdF2KAupdOpzUvoK8la-E655Y3RT6FYRx0_edog266gWAaBa5ukTjJDmYb1NeVzJxQsj" alt="Saudi Arabian professionals in a control room" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"></div>
+<div class="aspect-[16/9] overflow-hidden"><img alt="Saudi Arabian professionals in a control room" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb2tnZ0GoKww4ZwD__g2NfQEXWwDsEuS1w6XiE4K7HdQfIr683_yF_jyg8a-8jVlZjqOApx-9GuFnS9fjs5tFCk7jZD6U2qLbER4PSQgb4OkSvSg8_9hEBotrVJziO0eGMtvxf63gQzbOCHS4E_y-Z8Z_96j81WojeJ0NPgzKQi0Ii2mbRlz02TCjY64KOm6U3c0dJccq3UdF2KAupdOpzUvoK8la-E655Y3RT6FYRx0_edog266gWAaBa5ukTjJDmYb1NeVzJxQsj"/></div>
 <div class="p-8 flex flex-col gap-4">
 <h3 class="font-h3 text-[24px] text-primary">Intelligent Real-time Response</h3>
 <p class="text-secondary-auralis leading-relaxed">Our systems process massive streams of data to identify threats instantly, enabling Saudi engineers and first responders to act with precision.</p>
 </div>
 </div>
 </div>
-</section><section class="max-w-[1280px] mx-auto px-8 mb-[180px]"><div class="bg-panel-auralis rounded-3xl p-8 flex flex-col relative overflow-hidden border border-auralis min-h-[600px] flex justify-between bg-surface-container-lowest/40 backdrop-blur-sm"><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 h-full items-stretch"><div class="lg:col-span-7 rounded-2xl overflow-hidden border border-auralis shadow-sm"><img alt="Construction workers installing fire safety systems" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD97GTmB09Z0gEIOgKPP_VTGi3izewFrAzir8564m0g43e1Vy5KsgGBMekWLVEju1_gbX08iYX6ho-E7DH44lAykXEuLdAa5rkDRWboRRam0XVmow1dIJUuurFlWbfT-X9J7hsGWy126Ebl8Gfo0UaukBl0sy3NK4qjkkgHQmlASwqcrE4SvK4aP8KOcz7N0dqMO8XhR-Gk87DmjeTUM1p1eGcbZqzO8pVQS5HoFSXNsyOOgPZ6roteECgtoRlHZ6DusB_X6RE-hRHP"></div><div class="lg:col-span-5 flex flex-col gap-6"><div class="rounded-2xl overflow-hidden border border-auralis shadow-sm h-48"><img alt="Fire alarm control panel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ-YzS-P1i_0bmTdnZ4aRQqaqfiD9R9yk52ufAnVJ4ZA1Z2GZyDGXqszn1_oyNxfq0CfGqduSpOPTBisSMvPuobjmn_lQ1VwgomyvMJmOknfpcquGLZdB8JMve1LjJ4S7CZcI3-pR3xMw_ZBkSi1AMAiW0-YGRSxSprC-tj4PYVn6xL05ngASZziZfNmzij54BUPcIu6-Er4qboQIFWLsjLMw1Mk0dRWlbn3HAyfVNM4hPpBZWhiJaebJVA8aP_Tz_58pv55pdKXYL"></div><div class="flex flex-col gap-4"><h3 class="font-h3 text-[24px] text-primary">Fire Safety Excellence</h3><p class="text-secondary-auralis text-sm leading-relaxed">Our advanced fire safety systems are engineered to save lives, protect critical assets, and ensure business continuity through precision detection and rapid response technology.</p></div><div class="mt-auto p-6 bg-surface/50 rounded-2xl border border-auralis backdrop-blur-md"><h4 class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-2">Saudi Royal Commission Standards</h4><p class="text-xs text-secondary-auralis leading-relaxed">Adhering to the rigorous infrastructure requirements of the Royal Commission, we deliver world-class fire safety standards across Saudi Arabia's industrial cities, ensuring compliance and operational resilience.</p></div></div></div></div></section>
+</section><section class="max-w-[1280px] mx-auto px-8 mb-[180px]"><div class="bg-panel-auralis rounded-3xl p-8 flex flex-col relative overflow-hidden border border-auralis min-h-[600px] flex justify-between bg-surface-container-lowest/40 backdrop-blur-sm"><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 h-full items-stretch"><div class="lg:col-span-7 rounded-2xl overflow-hidden border border-auralis shadow-sm"><img alt="Construction workers installing fire safety systems" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD97GTmB09Z0gEIOgKPP_VTGi3izewFrAzir8564m0g43e1Vy5KsgGBMekWLVEju1_gbX08iYX6ho-E7DH44lAykXEuLdAa5rkDRWboRRam0XVmow1dIJUuurFlWbfT-X9J7hsGWy126Ebl8Gfo0UaukBl0sy3NK4qjkkgHQmlASwqcrE4SvK4aP8KOcz7N0dqMO8XhR-Gk87DmjeTUM1p1eGcbZqzO8pVQS5HoFSXNsyOOgPZ6roteECgtoRlHZ6DusB_X6RE-hRHP"/></div><div class="lg:col-span-5 flex flex-col gap-6"><div class="rounded-2xl overflow-hidden border border-auralis shadow-sm h-48"><img alt="Fire alarm control panel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ-YzS-P1i_0bmTdnZ4aRQqaqfiD9R9yk52ufAnVJ4ZA1Z2GZyDGXqszn1_oyNxfq0CfGqduSpOPTBisSMvPuobjmn_lQ1VwgomyvMJmOknfpcquGLZdB8JMve1LjJ4S7CZcI3-pR3xMw_ZBkSi1AMAiW0-YGRSxSprC-tj4PYVn6xL05ngASZziZfNmzij54BUPcIu6-Er4qboQIFWLsjLMw1Mk0dRWlbn3HAyfVNM4hPpBZWhiJaebJVA8aP_Tz_58pv55pdKXYL"/></div><div class="flex flex-col gap-4"><h3 class="font-h3 text-[24px] text-primary">Fire Safety Excellence</h3><p class="text-secondary-auralis text-sm leading-relaxed">Our advanced fire safety systems are engineered to save lives, protect critical assets, and ensure business continuity through precision detection and rapid response technology.</p></div><div class="mt-auto p-6 bg-surface/50 rounded-2xl border border-auralis backdrop-blur-md"><h4 class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-2">Saudi Royal Commission Standards</h4><p class="text-xs text-secondary-auralis leading-relaxed">Adhering to the rigorous infrastructure requirements of the Royal Commission, we deliver world-class fire safety standards across Saudi Arabia's industrial cities, ensuring compliance and operational resilience.</p></div></div></div></div></section>
 <!-- ENDLESS APPLICATIONS MODULE -->
-<section class="max-w-[1280px] mx-auto px-8 mb-[180px]" id="contact-section">
+<section class="max-w-[1280px] mx-auto mb-[180px]" id="contact-section">
 <div class="flex items-center gap-4 mb-8">
-<span class="font-label-caps text-label-caps bg-surface-variant text-primary px-3 py-1 rounded-full">contact&nbsp;</span>
+<span class="font-label-caps text-label-caps bg-surface-variant text-primary px-3 py-1 rounded-full">contact </span>
 <div class="h-px bg-auralis flex-grow opacity-50"></div>
 </div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-12"><div class="lg:col-span-5">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-12 text-center"><div class="lg:col-span-5">
 <h2 class="font-h2 text-[48px] text-primary leading-tight">Ready to take the next step? Reach out today.</h2>
 </div>
-<div class="lg:col-span-4 lg:col-start-9 flex flex-col justify-end text-right lg:text-left pt-4">
-
-<p class="font-body-lg text-body-lg text-secondary-auralis">Get in touch and lets&nbsp;<br></p><div><br></div><div><br></div><p class=""></p>
+<div class="lg:col-span-4 lg:col-start-9 flex flex-col justify-end lg:text-left pt-4 text-center">
+<p class="font-body-lg text-body-lg text-secondary-auralis">Whether you have a specific proposal in mind or need expert advice on industrial electrical systems and fire safety, we're here to help. <b data-index-in-node="138" data-path-to-node="4,0">Give us a call anytime between 9:00 AM and 5:00 PM (Sun–Thu)</b>, or send us a message below, and let's discuss how we can support your upcoming projects.</p><div><br/></div><div><br/></div><p class=""></p>
 </div></div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <!-- Contact Item 1 -->
-<div class="bg-card-auralis rounded-2xl p-6 border border-auralis h-[300px] flex flex-col justify-between relative overflow-hidden group hover:shadow-sm transition-shadow backdrop-blur-sm bg-surface-container-lowest/30"><div class="absolute inset-0 bg-gradient-to-br from-transparent to-surface-variant/30 opacity-0 group-hover:opacity-100 transition-opacity"></div><div class="relative z-10 grid grid-cols-2 h-full items-center gap-6"><div class="flex justify-center items-center h-full"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzNdvFv-cnmmb6rG29WFwzqeqP399HlUzatJRp3pY3BkAaw7tDS7sFn4CS4dbljtuMC_QRJKjUDA2JQII54dRcO_UOaVMgZp-pDDAFrKvwmga-rNZ0ic-bYq1sTTBGdre0FxsX5tR1NBLN5HUFMFhiVcHRR6YPlsE2T17AtpRyDJzNsSR0Ciq2JUXsHi3AMp9HyBlkMqCT-26SRYcvwRD1P5l3YskCd-XD2o54JmMLT-xoEirPQGmYMn8lEMZFxpKQkjM" alt="Email Icon" class="w-full h-48 object-contain opacity-70 group-hover:opacity-100 transition-opacity"></div><div class="flex flex-col justify-center"><span class="font-label-caps text-label-caps text-secondary-auralis uppercase tracking-widest mb-2">Our E-mail</span><p class="font-h3 text-[20px] text-primary">info@asc-sa.com</p></div></div></div>
+<div class="bg-card-auralis rounded-2xl p-6 border border-auralis h-[300px] flex flex-col justify-between relative overflow-hidden group hover:shadow-sm transition-shadow backdrop-blur-sm bg-surface-container-lowest/30"><div class="absolute inset-0 bg-gradient-to-br from-transparent to-surface-variant/30 opacity-0 group-hover:opacity-100 transition-opacity"></div><div class="relative z-10 grid grid-cols-2 h-full items-center gap-6"><div class="flex justify-center items-center h-full"><img alt="Email Icon" class="w-full h-48 object-contain opacity-70 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzNdvFv-cnmmb6rG29WFwzqeqP399HlUzatJRp3pY3BkAaw7tDS7sFn4CS4dbljtuMC_QRJKjUDA2JQII54dRcO_UOaVMgZp-pDDAFrKvwmga-rNZ0ic-bYq1sTTBGdre0FxsX5tR1NBLN5HUFMFhiVcHRR6YPlsE2T17AtpRyDJzNsSR0Ciq2JUXsHi3AMp9HyBlkMqCT-26SRYcvwRD1P5l3YskCd-XD2o54JmMLT-xoEirPQGmYMn8lEMZFxpKQkjM"/></div><div class="flex flex-col justify-center"><span class="font-label-caps text-label-caps text-secondary-auralis uppercase tracking-widest mb-2">Our E-mail</span><p class="font-h3 text-[20px] text-primary">info@asc-sa.com</p></div></div></div>
 <!-- Contact Item 2 -->
-<div class="bg-card-auralis rounded-2xl p-6 border border-auralis h-[300px] flex flex-col justify-between relative overflow-hidden group hover:shadow-sm transition-shadow backdrop-blur-sm bg-surface-container-lowest/30"><div class="absolute inset-0 bg-gradient-to-br from-transparent to-surface-variant/30 opacity-0 group-hover:opacity-100 transition-opacity"></div><div class="relative z-10 grid grid-cols-2 h-full items-center gap-6"><div class="flex justify-center items-center h-full"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBELqGBOImXFesoVSk8w5dzNiv719WWwlUd8fqFyziIATw6e0cPdYc_78RcpSF0X3L34reJL-ab7H9e3mEnxR2uqu6pmrdPuT4RL-8qjvxltFQJYUgtonD__w_dfTU_CDH9C2YloYCokZPsxMQwg1tagEJZHnOYaRA_8TYbs3_5awobcrDjrkNnGYqLgvqE9gojXTjuLOlo0_cPlFbIT9G97Pap-aj8Lf8d8JXYHxq6mSoF9v6-_STKIf9HpXfDS84XS0Cs4-BiEkDCu_s" alt="Phone Icon" class="w-full h-32 object-contain opacity-70 group-hover:opacity-100 transition-opacity"></div><div class="flex flex-col justify-center"><span class="font-label-caps text-label-caps text-secondary-auralis uppercase tracking-widest mb-2">Our Number</span><p class="font-h3 text-[20px] text-primary">+966 12 345 6789</p></div></div></div>
+<div class="bg-card-auralis rounded-2xl p-6 border border-auralis h-[300px] flex flex-col justify-between relative overflow-hidden group hover:shadow-sm transition-shadow backdrop-blur-sm bg-surface-container-lowest/30"><div class="absolute inset-0 bg-gradient-to-br from-transparent to-surface-variant/30 opacity-0 group-hover:opacity-100 transition-opacity"></div><div class="relative z-10 grid grid-cols-2 h-full items-center gap-6"><div class="flex justify-center items-center h-full"><img alt="Phone Icon" class="w-full h-32 object-contain opacity-70 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBELqGBOImXFesoVSk8w5dzNiv719WWwlUd8fqFyziIATw6e0cPdYc_78RcpSF0X3L34reJL-ab7H9e3mEnxR2uqu6pmrdPuT4RL-8qjvxltFQJYUgtonD__w_dfTU_CDH9C2YloYCokZPsxMQwg1tagEJZHnOYaRA_8TYbs3_5awobcrDjrkNnGYqLgvqE9gojXTjuLOlo0_cPlFbIT9G97Pap-aj8Lf8d8JXYHxq6mSoF9v6-_STKIf9HpXfDS84XS0Cs4-BiEkDCu_s"/></div><div class="flex flex-col justify-center"><span class="font-label-caps text-label-caps text-secondary-auralis uppercase tracking-widest mb-2">Our Number</span><p class="font-h3 text-[20px] text-primary">+966 12 345 6789</p></div></div></div>
 </div>
 </section>
 </main>
@@ -250,7 +251,7 @@
 <footer class="w-full border-t border-zinc-200 dark:border-zinc-800 bg-[#F3F2EF] dark:bg-zinc-900 mt-auto relative z-10">
 <div class="max-w-[1280px] mx-auto px-8 py-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12">
 <div class="col-span-2 flex flex-col gap-6">
-<span class="text-base font-bold text-zinc-900 dark:text-zinc-50 font-h3 text-[20px]">Al Assas Specialized&nbsp;</span>
+<span class="text-base font-bold text-zinc-900 dark:text-zinc-50 font-h3 text-[20px]">Al Assas Specialized </span>
 <p class="font-['Inter'] text-sm leading-relaxed text-zinc-500 dark:text-zinc-400 max-w-xs">© 2026 ASC Ltd</p>
 </div>
 </div>
@@ -290,10 +291,4 @@
             }
         });
     </script>
-
-
-
-
-
-
 </body></html>
