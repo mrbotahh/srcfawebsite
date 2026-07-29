@@ -113,9 +113,10 @@
             position: fixed;
             width: 120vw;
             height: 120vh;
-            background: radial-gradient(circle, rgb(193, 225, 193) 0%, rgb(34, 139, 34) 60%, rgb(178, 190, 181) 100%);
+            /* Updated palette: Core (#75c831) -> Mid (#538f23) -> Outer (#21390e) */
+            background: radial-gradient(circle, #75c831 0%, #538f23 45%, #21390e 100%);
             filter: blur(120px);
-            opacity: 0.45;
+            opacity: 0.35;
             /* Squircle shape using border-radius: 40% */
             border-radius: 40%;
             pointer-events: none;
@@ -129,7 +130,7 @@
 </head>
 <body class="antialiased min-h-screen flex flex-col font-body-md text-body-md overflow-x-hidden bg-[#fdf8f8] h-auto">
 <!-- MOUSE TRACKING BLOB (SQUIRCLE) -->
-<div class="" id="cursor-blob" style='position: fixed; width: 120vw; height: 120vh; background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAj1oTEqSASm7lyWM_VTh7rSnChgjArMXtOri4oY3sPkGT7NpwU9wKv3WjTL7s6Z3RQnhGnnLaWfpml3wt1i9QaX74-BqDP4rgj_6U2MWnFGX8Z9StJ_abApnvNaGP2rjAHWsdWg3MB8u9WTT4mb_nUm7BIBTX_MLtUsKbIYQ4AVUGoGSw6p6RWaP4sK0l4p5B7wzGfZAhbqGRwLOssdzC12wmmAXU8TquFsuiwavfvzB8X9OX9PnfZCgRqvjQRoy3XGgY"); background-size: cover; background-position: center center; filter: blur(120px); opacity: 0.45; border-radius: 40%; pointer-events: none; z-index: 0; left: -60vw; top: -60vh; will-change: transform; transition: transform 0.15s cubic-bezier(0.23, 1, 0.32, 1);'></div>
+<div class="" id="cursor-blob" style="position: fixed; width: 120vw; height: 120vh; background: radial-gradient(circle, #75c831 0%, #538f23 45%, #21390e 100%); filter: blur(120px); opacity: 0.35; border-radius: 40%; pointer-events: none; z-index: 0; left: -60vw; top: -60vh; transition: transform 0.15s cubic-bezier(0.23, 1, 0.32, 1);"></div>
 <!-- TOP NAVIGATION -->
 <nav class="fixed top-0 w-full z-50 border-b border-zinc-200/60 dark:border-zinc-800/60 bg-[#F7F7F5]/80 dark:bg-zinc-950/80 transition-all backdrop-blur-md">
 <div class="max-w-[1280px] mx-auto px-8 flex justify-between items-center h-[72px] px-4">
@@ -272,23 +273,24 @@
 
         window.addEventListener('load', setInitialPosition);
 
-        // Mouse tracking with smooth movement
-        let mouseX = 0;
-        let mouseY = 0;
-        
+        // Track movement (handles mouse and touch)
+        const updatePosition = (x, y) => {
+            blob.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+        };
+
         document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-            
-            // Using direct transform update with transition for performance and ease
-            blob.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+            updatePosition(e.clientX, e.clientY);
         });
+
+        document.addEventListener('touchmove', (e) => {
+            if (e.touches.length > 0) {
+                updatePosition(e.touches[0].clientX, e.touches[0].clientY);
+            }
+        }, { passive: true });
 
         // Handle window resize for initial positioning if needed
         window.addEventListener('resize', () => {
-            if (mouseX === 0 && mouseY === 0) {
-                setInitialPosition();
-            }
+            setInitialPosition();
         });
     </script>
 </body></html>
